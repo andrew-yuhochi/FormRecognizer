@@ -35,8 +35,6 @@ We have 53 different forms are in our scope. 5 images are taken for each forms w
 
 <img src = "raw_data_example.jpg" width = "750">
 
-We reverse the ownership of our data.
-
 ## Reference Data
 We use a digital version of 53 forms as reference data for all inferencing purpose.
 
