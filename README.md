@@ -42,5 +42,9 @@ We use a digital version of 53 forms as reference data for all inferencing purpo
 The first part of this notebook is to create synthetic data with a series of transformation method, including scaling, rotating, lighting, noising and bluring. All synthetic data will then be saved into a Synthetic Data File. The second part of the notebook relocate the images and create a output data file by assigning 1 possitive image and 1 negative image to each data, which match with the structure of Siamese network.
 
 1. Model_Training.ipynb
-As mentioned, 
+This notebook contain 1) customized data generator, 2) base model setting, 3) simanese Network setting, 4) model training and 5) loss plotting. 1) Customized data generator is built for calling the Anchor, Positive & Negative images in a correct order.  2) Base model setting is to add 3 dense, dropout and batch normalization layers on-top of a resnet50 network. 3) Simanese Network setting is to define 2 new classes, the DistanceLayer classes for calculating the triplet loss from our input images and SiameseModel classes to combine all items & construct a simple model object. 4) model training is to train the model with defined learning rate schedule, batch size, metric and epoch. 5) loss plotting is to plot the training and validation loss for easier understnading on model performance.
+
+2.Batch_Inference.ipynb
+After training the sigmnese model, we then pass the reference data and testing data into the base model. A n-dimension embedding will be returned and we then compare the similarity between testing data to each of the reference data by calculating cosine similarity. Testing data is passed to the model and a finally testing top K accuracy is obtained. 
+
  
