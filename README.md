@@ -33,7 +33,7 @@ We @FillEasy providing digital form filling service and maintaining > 50 forms a
 ## Raw Data 
 We have 53 different forms are in our scope. 5 images are taken for each forms with different lighting, background and camera setting. The form are always located nearly the middle of the photo and occupied approximately 90% of total area. Below are an example:
 
-<img src = "raw_data_example.jpeg" width = "750">
+<img src = "raw_data_example.jpg" width = "750">
 
 We reverse the ownership of our data.
 
